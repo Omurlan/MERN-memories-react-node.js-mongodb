@@ -16,6 +16,8 @@ const Form = ({ currentId, setCurrentId }) => {
   useEffect(() => {
     if (post) {
       setPostData(post);
+    } else {
+      setPostData({ title: '', message: '', tags: '', selectedFile: '' })
     }
   }, [post]);
 
